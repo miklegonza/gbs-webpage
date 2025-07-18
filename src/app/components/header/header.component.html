@@ -1,0 +1,38 @@
+<header class="navbar navbar-expand-lg fixed-top arriba">
+    <div class="container-fluid px-5">
+        <div>
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="/">
+                <!-- <app-logo/> -->
+                <img
+                    src="logo.svg"
+                    alt="Logo GBS"
+                    title="Global Business Stategists"
+                    width="300"
+                    class="logo"
+                />
+            </a>
+        </div>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#Navbar"
+            aria-controls="Navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse flex-grow-0" id="Navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                @for (item of navbarItems; track $index) {
+                    <li class="nav-item ps-3">
+                        <a class="link nav-link text-white" aria-current="page" href="{{ item.path }}">
+                            {{ item.title }}
+                        </a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+</header>

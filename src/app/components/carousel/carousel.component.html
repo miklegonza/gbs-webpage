@@ -1,0 +1,13 @@
+<ngb-carousel>
+    @for (item of carouselItems; track $index; let first = $first) {
+        <ng-template ngbSlide>
+            <div class="d-flex justify-content-center align-items-center">
+                <img
+                    [src]="item.image"
+                    class="carousel-image object-fit-cover rounded-3"
+                    [alt]="item.alt"
+                />
+            </div>
+        </ng-template>
+    }
+</ngb-carousel>
