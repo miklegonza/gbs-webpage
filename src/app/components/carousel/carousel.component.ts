@@ -10,9 +10,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CarouselComponent {
     carouselItems = [
-        { image: 'https://placehold.co/400x600', alt: 'Imagen 1' },
-        { image: 'https://placehold.co/400x600', alt: 'Imagen 2' },
-        { image: 'https://placehold.co/400x600', alt: 'Imagen 3' },
-        { image: 'https://placehold.co/400x600', alt: 'Imagen 4' },
+        { image: 'carousel1.jpg', alt: 'Imagen 1' },
+        { image: 'carousel2.jpg', alt: 'Imagen 2' },
+        { image: 'carousel3.jpg', alt: 'Imagen 3' },
     ];
 }

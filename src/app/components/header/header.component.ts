@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
     navbarItems = [
         { title: 'Inicio', name: 'home', path: '#top' },
-        { title: 'Nosotros', name: 'about', path: '#' },
+        { title: 'Nosotros', name: 'about', path: '#about' },
         /* { title: 'Servicios', name: 'services', path: '#' },
         { title: 'Portafolio', name: 'Portfolio', path: '#' },
         { title: 'Contacto', name: 'contact', path: '#' }, */
